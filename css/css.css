@@ -1,0 +1,80 @@
+/* reset */
+*{margin: 0; padding: 0; font-family: 'Malgun Gothic';}
+body {padding: 20px;}
+
+/* temp grid */
+.col-6 {width: 50%;}
+
+.container{
+        display:table;
+}
+
+.only-sr {
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 1px;
+    height: 1px;
+}
+
+/* form | radio */
+.radio-items {
+    display: table;
+    width: 100%;
+    border: 1px solid #46BD7B;
+    border-radius: 4px; 
+    box-sizing: border-box;
+}
+.radio-items > div {
+        display: table-cell;    
+        height: 30px;
+        line-height: 30px;
+        border-left: 1px solid #46BD7B;
+        text-align: center;
+}       
+.radio-items > div:first-child {
+        border-left: none;
+        width: auto !important;
+}
+.col-6 > label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #46BD7B;
+        box-sizing: border-box;
+        cursor: pointer;
+}
+input[type="radio"]:checked + label{
+        background-color: #46BD7B;
+        color: #fff;
+}
+.selector{
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0px 2px;
+}       
+.box{
+        padding: 3px 0px;
+        width: 150px;
+}
+#inputText{
+        height: 68px;
+        border: 1px solid #46BD7B;
+        border-radius: 4px; 
+        font-size: 55px;
+        text-align: center;
+        color: #46BD7B;
+        width: 150px;
+}
+#inputText::placeholder{
+        font-size: 40px;
+}
+.tableRow{
+        display: table-row;
+        text-align: center;
+}
+.text{
+        border: 1px solid #46BD7B;
+}
+
+input:focus {outline:none;}     
